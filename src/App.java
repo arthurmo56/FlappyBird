@@ -1,0 +1,31 @@
+import javax.swing.*;
+
+public class App {
+    public static void main(String[] args) throws Exception {
+        //Altura e Largura da janela
+        int boardWidth = 360;
+        int boardHeight = 640;
+
+        JFrame frame = new JFrame("Flappy Bird");
+        // frame.setVisible(true);
+        frame.setSize(boardWidth,boardHeight);
+        frame.setLocationRelativeTo(null);
+        frame.setResizable(false);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        FlappyBird flappybird = new FlappyBird();
+        frame.add(flappybird);
+        frame.pack();
+        flappybird.requestFocus();
+        frame.setVisible(true);
+    }
+}
+//TODO:
+/*
+ * 1- diminuir a gravidade
+ *
+ * 2-criar um arquivo binario para registar o maior placar
+ * armazenar com um nome
+ * mostar em todo game overf
+ * 
+ */
