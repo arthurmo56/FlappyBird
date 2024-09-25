@@ -20,12 +20,3 @@ public class App {
         frame.setVisible(true);
     }
 }
-//TODO:
-/*
- * 1- diminuir a gravidade
- *
- * 2-criar um arquivo binario para registar o maior placar
- * armazenar com um nome
- * mostar em todo game overf
- * 
- */
